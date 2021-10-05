@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<!--Hunter Roach-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Countdown</title>
+    <script>
+    function countdown() {
+    var count = 10 // this will keep track of the number
+    var timeout = 10000 // this variable will help to pause between actions
+    for (var i = 0; i < 11; i++){ //this is our loop that starts from 10 and counts down slowly
+        setTimeout(function(){
+        document.getElementById('display').innerHTML = count
+        count = count - 1
+        }, 1000 * i);
+        }
+    }
+    </script>
+</head>
+<body>
+    <h1>Timer</h1>
+    <p> Press the button to itnitiate blastoff</p>
+    <!-- Here our countdown variable can be seen by the user-->
+    <h2>Countdown</h2>
+    <p style='color: #FF0000' id="display">10</p>
+    <!--This is a button that starts the timer-->
+    <button type="button" onclick="countdown()"> Start</button>
+</body>
+</html>

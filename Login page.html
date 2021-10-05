@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!---Hunter Roach-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login Page</title>
+        <script src="loginjs.js"></script>
+    </head>
+    <Body>
+        <h1 style="text-align: center;">Login</h1>
+        <br>
+        <p id='status'></p>
+        <br>
+        <form id="logindata" style="text-align: center;" onsubmit="return false">
+            First name: <input type="text" id="username"/><br>
+            Last name:   <input type="text" id="password"/><br>
+            Badge number:  <input type="number" id="players"/><br>
+            <input type="submit" onclick="verify();"/>
+        </form>
+
+
+    </Body>
+</html>
